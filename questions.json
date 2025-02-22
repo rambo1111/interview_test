@@ -1,0 +1,44 @@
+{
+    "interview_questions": [
+        {
+            "question": "Describe the difference between generators and iterators in Python. Provide a practical example where using a generator would be more efficient than using a list comprehension.",
+            "topic": "Generators and Iterators"
+        },
+        {
+            "question": "Explain the concept of decorators in Python. How would you implement a decorator that logs the execution time of a function?",
+            "topic": "Decorators"
+        },
+        {
+            "question": "You're tasked with building a caching mechanism for a frequently accessed function. Discuss the advantages and disadvantages of using `functools.lru_cache` versus implementing a custom caching solution. In what scenarios would a custom cache be preferred?",
+            "topic": "Caching and Memoization"
+        },
+        {
+            "question": "Explain the Global Interpreter Lock (GIL) in Python. What are its limitations, and what strategies can you employ to mitigate its impact on multi-threaded applications that are CPU-bound?",
+            "topic": "Concurrency and Parallelism (GIL)"
+        },
+        {
+            "question": "Describe the purpose of the `__slots__` attribute in Python classes. What are the benefits and drawbacks of using it, and when might you consider using it in a real-world application?",
+            "topic": "Object-Oriented Programming (Memory Management)"
+        },
+        {
+            "question": "You're working with a large dataset and need to perform complex data transformations. Compare and contrast the use of pandas DataFrames and NumPy arrays for this task, considering factors such as performance, memory usage, and ease of use. Provide a specific example where one would be significantly better suited than the other.",
+            "topic": "Data Structures (Pandas vs. NumPy)"
+        },
+        {
+            "question": "Explain the difference between shallow copy and deep copy in Python. Provide a practical example using mutable objects to demonstrate the difference, and explain how each type of copy affects the original object.",
+            "topic": "Copying Objects (Shallow vs. Deep)"
+        },
+        {
+            "question": "Implement a function that takes a list of integers and returns a new list containing only the even numbers, without using list comprehensions. Do this efficiently by preallocating a correctly sized list. Avoid using `append()` method within the loop to improve performance.",
+            "topic": "Data Structures and Algorithms (List Manipulation)"
+        },
+        {
+            "question": "Write a function that takes a string as input and determines if the string is a palindrome (reads the same forwards and backward), ignoring spaces, punctuation, and capitalization. Return True if it's a palindrome, False otherwise.",
+            "topic": "Data Structures and Algorithms (String Manipulation)"
+        },
+        {
+            "question": "Given two sorted lists of integers, write a function to merge them into a single sorted list without using the built-in `sorted()` function. The solution should be done in-place if possible",
+            "topic": "Data Structures and Algorithms (Merging sorted lists)"
+        }
+    ]
+}
