@@ -1,4 +1,6 @@
-# interview_test
+```
+conda create --name test python=3.10.12
+```
 
 
 ```
