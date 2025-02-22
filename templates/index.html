@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Test</title>
+</head>
+<body>
+    {% if question %}
+        <h3>Question {{ question_num }}</h3>
+        <p><strong>Topic:</strong> {{ question["topic"] }}</p>
+        <p><strong>Question:</strong> {{ question["question"] }}</p>
+        
+        {% if question_num > 1 %}
+            <a href="{{ url_for('prev_question') }}"><button>Previous</button></a>
+        {% endif %}
+        
+        {% if question_num < total %}
+            <a href="{{ url_for('next_question') }}"><button>Next</button></a>
+        {% endif %}
+    
+    {% else %}
+        <h2>Enter Skill and Level</h2>
+        <form method="post">
+            <label for="skill">Skill:</label>
+            <input type="text" id="skill" name="skill" required>
+            <label for="level">Level:</label>
+            <select id="level" name="level" required>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+            <button type="submit">Start Test</button>
+        </form>
+    {% endif %}
+</body>
+</html>
